@@ -141,6 +141,10 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => exp(c), (c: Complex) => c*c, 2000)))
 //  createImage(imageArray, 2000, "exponential_alt_m3")
 
+  grid = getGrid(2500, -2,1,-1,1)
+  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => c*c*c, 500)))
+  createImage(imageArray, 500, "rational_alt_m4")
+
 
 
 
