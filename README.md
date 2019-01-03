@@ -25,6 +25,9 @@ and iteration alternating between multiple functions
 
 ### The fractals
 
+The images for the fractals are roughly divided by the type of iteration process. I plan on adding more stuff whenever
+I have time and interest
+
 1. [The simple and mandelbrot-style](simple.md)
 
 2. [With feedback](feedback.md)

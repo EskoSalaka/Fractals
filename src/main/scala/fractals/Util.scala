@@ -104,7 +104,7 @@ object Util {
 
   def iterate_feedback_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
     var s: Complex = c
-    var feedback: Complex = 0 + i*0
+    var feedback: Complex = 0*i
 
     for (n <- 0 until maxIter){
       s = f(s) + c + feedback
