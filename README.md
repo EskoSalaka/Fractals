@@ -25,11 +25,11 @@ and iteration alternating between multiple functions
 
 ### The fractals
 
-The simple and mandelbrot-style 
+[The simple and mandelbrot-style] (simple.md)
 
-With feedback
+[With feedback] (feedback.md)
 
-Alternating functions
+[Alternating functions] (alternating.md)
 
 ### Short look into the code
 
