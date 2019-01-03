@@ -41,22 +41,22 @@ def iterate_feedback_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): 
 
 The normal mandelbrot set `Zn -> Zn^2 + Zn-1 + C` x=[-2,1] y=[-1,1]
 
-<img src="Images\mandelbrot_feedback.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/mandelbrot_feedback.png" width="50%" height="50%"> 
 
 ---
 
 Simple iteration of the exponential function `Zn -> exp(Zn) + Zn-1` x=[-5,5] y=[-5,5]
 
-<img src="Images\exponentia_feedback.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponentia_feedback.png" width="50%" height="50%"> 
 
 ---
 
 Mandelbrot-style iteration of the exponential function `Zn -> exp(Zn) + Zn-1 + C` x=[-1,5] y=[-5,5]
 
-<img src="Images\exponential_feedback_m.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential_feedback_m.png" width="50%" height="50%"> 
 
 This one is a bit more interesting. We can see little Mandelbrots partly covered by the tendrils from
 the exponential functions. Lets zoom in on one of those around x=[0,0.8] y=[2.8,3.5]
 
-<img src="Images\exponential_feedback_m2.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential_feedback_m2.png" width="50%" height="50%"> 
 
