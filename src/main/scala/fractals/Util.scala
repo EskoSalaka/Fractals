@@ -80,7 +80,6 @@ object Util {
   def iterate_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
     var s: Complex = c
 
-
     for (n <- 0 until maxIter){
       s = f(s) + c
       if (s.re.isInfinity || s.imag.isInfinity) return n
