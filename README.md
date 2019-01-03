@@ -34,4 +34,4 @@ Exponential function `Z --> exp(Z) + C` with mandelbrot-style iteration
 <img src="Images\exponential_m3.png" height="5000" width="500"> 
 
 Mandelbrot-style iteration alternating between `Z --> Z^2` and `Z --> i*Z^2`
-<img src="Images\rational_alt1.png" height="5000" width="500"> 
+<img src="Images\rational_alt1.png" height="5000" width="500">
