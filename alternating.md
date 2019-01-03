@@ -81,6 +81,6 @@ Mandelbrot style iteration between the functions exp(Z) and Z^2 for  x=[-5,5] y=
 
 Mandelbrot style iteration between the functions Z^2 and Z^3 for  x=[-2,1] y=[-1,1]
 
-<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential_alt_m4.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_alt_m4.png" width="50%" height="50%"> 
 
 
