@@ -34,34 +34,45 @@ converged. Next, the pixels are painted with a certain color corresponding to th
 The iteration function are quite simple. For example, the normal mandelbrot-style iteration with a desired
 function is as follows:
 
-`
-    def iterate_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
-        var s: Complex = c
-    
-        for (n <- 0 until maxIter){
-          s = f(s) + c
-          if (s.re.isInfinity || s.imag.isInfinity) return n
-        }
-    
-        0
-      }
-`
+```
+def iterate_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
+    var s: Complex = c
+
+    for (n <- 0 until maxIter){
+      s = f(s) + c
+      if (s.re.isInfinity || s.imag.isInfinity) return n
+    }
+
+    0
+  }
+```
 
 Obviously, there is no optimization such as stopping the iteration if some fixed point or other bailout condition
 is reached. This is quite fine for a simple on-the-surface look.
 
 The pixels are coloured according to a simple logarithmic scale palette
 
-`
-    def getColor(iter: Int, maxIter: Int):Color ={
+```
+def getColor(iter: Int, maxIter: Int):Color ={
 
-        val c = 3 * log(iter) / log(maxIter - 1.0)
-    
-        if ( c < 1) new Color((255 * c).toInt, 0, 0)
-        else if (c < 2) new Color(255, (255*(c - 1)).toInt, 0)
-        else new Color(255, 255, (255*(c - 2)).toInt)
-    } 
-`
+    val c = 3 * log(iter) / log(maxIter - 1.0)
+
+    if ( c < 1) new Color((255 * c).toInt, 0, 0)
+    else if (c < 2) new Color(255, (255*(c - 1)).toInt, 0)
+    else new Color(255, 255, (255*(c - 2)).toInt)
+} 
+```
+
+Creating the images with a desired function is quite simple. Here's an example of the exponential function in the range
+x=[-0.1,0.1] and y=[0.2,0.3] with mandelbrot-style iteration creating an image of base-size of 2000 pixels
+
+```
+grid = getGrid(2000, -0.1,0.1,0.2,0.3)
+imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c))))
+createImage(imageArray, 1000, "exponential_m1")
+```
+
+<img src="Images\exponential_m1.png" width="50%" height="50%"> 
 
 ### Some examples
 
