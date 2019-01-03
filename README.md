@@ -23,18 +23,27 @@ and iteration alternating between multiple functions
 
 `Zn+1 -> f1(Zn) when n % 2 == 0 else Zn+1 -> f2(Zn)`
 
+### The fractals
+
+The simple and mandelbrot-style 
+
+With feedback
+
+Alternating functions
+
 ### Short look into the code
 
 The iteration methods and everything else related to creating the images are in the Util object. The basic
-idea is to create a desired size grid of complex values representing coordinates of the pixels on the screen. Next, iteration methods 
-are applied on the values of the grid producing another grid which holds the results of the iteration. The results are 
-basically just integers representing the amount of iterations it took to reach infinity or just 0 if the iteration 
-converged. Next, the pixels are painted with a certain color corresponding to the result producing a png file.
+idea is to create a desired size grid of complex values representing coordinates of the pixels on the screen. Next, 
+iteration methods are applied on the values of the grid producing another grid which holds the results of the iteration. 
+The results are basically just integers representing the amount of iterations it took to reach infinity or just 0 if 
+the iteration converged. Next, the pixels are painted with a certain color corresponding to the result producing a 
+png file.
 
 The iteration function are quite simple. For example, the normal mandelbrot-style iteration with a desired
-function is as follows:
+function f and the desired maximum number of iterations is as follows:
 
-```
+```scala
 def iterate_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
     var s: Complex = c
 
@@ -48,11 +57,12 @@ def iterate_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
 ```
 
 Obviously, there is no optimization such as stopping the iteration if some fixed point or other bailout condition
-is reached. This is quite fine for a simple on-the-surface look.
+is reached. For example, for the mandelbrot set we could already stop the iteration after abs(Z)>2. This is quite fine 
+for a simple on-the-surface look since most of the time the iteration blows up to infinity very quickly.
 
 The pixels are coloured according to a simple logarithmic scale palette
 
-```
+```scala
 def getColor(iter: Int, maxIter: Int):Color ={
 
     val c = 3 * log(iter) / log(maxIter - 1.0)
@@ -66,7 +76,7 @@ def getColor(iter: Int, maxIter: Int):Color ={
 Creating the images with a desired function is quite simple. Here's an example of the exponential function in the range
 x=[-0.1,0.1] and y=[0.2,0.3] with mandelbrot-style iteration creating an image of base-size of 2000 pixels
 
-```
+```scala
 grid = getGrid(2000, -0.1,0.1,0.2,0.3)
 imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c))))
 createImage(imageArray, 1000, "exponential_m1")
@@ -83,6 +93,7 @@ The normal mandelbrot set `Z -> Z + c`
 
 Exponential function `Z -> exp(Z) + C` with mandelbrot-style iteration
 <img src="Images\exponential_m3.png" height="5000" width="500"> 
+
 
 Mandelbrot-style iteration alternating between `Z -> Z^2` and `Z -> i*Z^2`
 <img src="Images\rational_alt1.png" width="50%" height="50%">
