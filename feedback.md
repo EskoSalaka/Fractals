@@ -16,7 +16,7 @@ def iterate_feedback(c: Complex, f: Complex => Complex, maxIter: Int = 1000): In
     }
 
     0
-  }
+} 
 ```
 
 We can also do the same in a similar way for the mandelbrot-style iteration
@@ -34,7 +34,7 @@ def iterate_feedback_m(c: Complex, f: Complex => Complex, maxIter: Int = 1000): 
     }
 
     0
-  }
+}
 ```
 
 # The images
