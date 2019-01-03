@@ -27,7 +27,7 @@ and iteration alternating between multiple functions
 
 The normal mandelbrot set `Z -> Z + c`
 
-<img src="Images\mandelbrot.png" height="500" width="500"> 
+<img src="Images\mandelbrot.png" width="50%" height="50%"> 
 
 
 Exponential function `Z -> exp(Z) + C` with mandelbrot-style iteration
