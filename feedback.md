@@ -47,7 +47,7 @@ The normal mandelbrot set `Zn -> Zn^2 + Zn-1 + C` x=[-2,1] y=[-1,1]
 
 Simple iteration of the exponential function `Zn -> exp(Zn) + Zn-1` x=[-5,5] y=[-5,5]
 
-<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponentia_feedback.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential_feedback.png" width="50%" height="50%"> 
 
 ---
 

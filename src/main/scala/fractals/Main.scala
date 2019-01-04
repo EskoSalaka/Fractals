@@ -89,6 +89,22 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*(1-c))))
 //  createImage(imageArray, 1000, "rational3")
 
+//  grid = getGrid(3000, -1,1.5,-1,1)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*c*c - c - 1, 500)))
+//  createImage(imageArray, 500, "rational_m4")
+
+//  grid = getGrid(3000, -0.1,1.4,-0.5,0.5)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*c*c - c - 1, 500)))
+//  createImage(imageArray, 500, "rational_m5")
+
+//  grid = getGrid(3000, 0.7,0.8,-0.31,-0.2)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*c*c - c - 1, 500)))
+//  createImage(imageArray, 500, "rational_m6")
+
+//  grid = getGrid(3000, 0.774,0.78,-0.275,-0.265)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*c*c - c - 1, 500)))
+//  createImage(imageArray, 500, "rational_m7")
+
   //////////////////////////////////////////// With Feedback ///////////////////////////////////////////////////////////
 
 //  grid = getGrid(3000, -2,1,-1,1)
@@ -129,9 +145,9 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => i*c*c, 500)))
 //  createImage(imageArray, 500, "rational_alt1")
 
-  grid = getGrid(2000, -1.1,1.1,-1.0,1.8)
-  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => i*c*c, (c: Complex) => c*c, 500)))
-  createImage(imageArray, 500, "rational_alt_m5")
+//  grid = getGrid(2000, -1.1,1.1,-1.0,1.8)
+//  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => i*c*c, (c: Complex) => c*c, 500)))
+//  createImage(imageArray, 500, "rational_alt_m5")
 
 //  grid = getGrid(5000, 0.28,.43,0.7,.85)
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => i*c*c, 1000)))
