@@ -41,7 +41,7 @@ different kinds of details in the original one.
 
 # The images
 
-Mandelbrot style iteration between functions Z^2 and i*Z^2 for  x=[-1.6,0.8] y=[-1.4,1.4]
+Mandelbrot style iteration between functions Z^2 and i*Z^2 for x=[-1.6,0.8] y=[-1.4,1.4]
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_alt1.png" width="50%" height="50%"> 
 
@@ -51,6 +51,11 @@ Its kind of suprising that the image looks quite coherent and not choppy like so
 take a closer look at the top right of the image x=[0.28,0.43] y=[0.7,0.85]
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_alt2.png" width="50%" height="50%"> 
+
+To demnostrate how switching the order affects the result, lets look at the same for i*Z^2 and Z^2 for 
+x=[-0.8,1.1] y=[-1.0,1.8]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_alt_m5.png" width="50%" height="50%"> 
 
 ---
 

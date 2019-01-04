@@ -13,7 +13,7 @@ object Main extends App {
 
   ////////////////////////////////// Simple and mandelbrot style iterations ////////////////////////////////////////////
 
-//  grid = getGrid(1000, -2,1,-1,1)
+//  grid = getGrid(2000, -2,1,-1,1)
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c * c)))
 //  createImage(imageArray, 1000, "mandelbrot")
 
@@ -129,6 +129,10 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => i*c*c, 500)))
 //  createImage(imageArray, 500, "rational_alt1")
 
+  grid = getGrid(2000, -0.8,1.1,-1.0,1.8)
+  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => i*c*c, (c: Complex) => c*c, 500)))
+  createImage(imageArray, 500, "rational_alt_m5")
+
 //  grid = getGrid(5000, 0.28,.43,0.7,.85)
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => i*c*c, 1000)))
 //  createImage(imageArray, 1000, "rational_alt2")
@@ -141,9 +145,9 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => exp(c), (c: Complex) => c*c, 2000)))
 //  createImage(imageArray, 2000, "exponential_alt_m3")
 
-  grid = getGrid(2500, -2,1,-1,1)
-  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => c*c*c, 500)))
-  createImage(imageArray, 500, "rational_alt_m4")
+//  grid = getGrid(2500, -2,1,-1,1)
+//  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => c*c*c, 500)))
+//  createImage(imageArray, 500, "rational_alt_m4")
 
 
 
