@@ -68,7 +68,7 @@ Hyperbolic sine exp(Z) - exp(-Z) with feedback for x=[-5,5] y=[-5,5] and x=[-1,2
 
 Again we see some hidden mandelbrots. Lets zoom in the middle to x=[-1,2] y=[-1,1]
 
-<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin_feedback2.png.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin_feedback2.png" width="50%" height="50%"> 
 
 From this we can also see other familiar patterns like the Doudy Rabbit and common Julia sets of the Mandelbrot which 
 are curiously partly covered.
