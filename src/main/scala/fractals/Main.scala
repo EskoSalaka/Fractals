@@ -105,9 +105,12 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*c*c - c - 1, 500)))
 //  createImage(imageArray, 500, "rational_m7")
 
-  grid = getGrid(2000, -1,1,-1,1)
-  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => (5*c.pow(3) - 3*c)/2.0, 500)))
-  createImage(imageArray, 500, "legendre_m4")
+//  grid = getGrid(1000, -3,3,-3,3)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c.re.abs + i*c.im.abs))))
+//  createImage(imageArray, 1000, "exp_ship_m1")
+
+
+
 
   //////////////////////////////////////////// With Feedback ///////////////////////////////////////////////////////////
 
@@ -169,8 +172,23 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => c*c*c, 500)))
 //  createImage(imageArray, 500, "rational_alt_m4")
 
+  /////////////////////////////////////// The other stuff //////////////////////////////////////////////////////////////
 
+//  grid = getGrid(1000, -0.5,0,-0.5,0.5)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
+//  createImage(imageArray, 1000, "mandelpinski1")
 
+//  grid = getGrid(3000, -0.1,0,-0.1,0.1)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 2000)))
+//  createImage(imageArray, 2000, "mandelpinski2")
+
+//  grid = getGrid(5000, -0.04,-0.029,-0.057,-0.048)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
+//  createImage(imageArray, 1000, "mandelpinski3")
+
+  grid = getGrid(5000, -0.01,0,-0.01,0.01)
+  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
+  createImage(imageArray, 1000, "mandelpinski4")
 
 
 

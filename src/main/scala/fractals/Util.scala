@@ -88,6 +88,17 @@ object Util {
     0
   }
 
+  def iterate_mdp(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
+    var s: Complex = c
+
+    for (n <- 0 until maxIter){
+      s = f(s) + c/s
+      if (s.re.isInfinity || s.imag.isInfinity) return n
+    }
+
+    0
+  }
+
   def iterate_feedback(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
     var s: Complex = c
     var feedback: Complex = 0*i
