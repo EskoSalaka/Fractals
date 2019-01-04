@@ -186,9 +186,13 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
 //  createImage(imageArray, 1000, "mandelpinski3")
 
-  grid = getGrid(5000, -0.01,0,-0.01,0.01)
-  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
-  createImage(imageArray, 1000, "mandelpinski4")
+//  grid = getGrid(5000, -0.01,0,-0.01,0.01)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
+//  createImage(imageArray, 1000, "mandelpinski4")
+
+  grid = getGrid(3000, -5,5,-10,10)
+  imageArray = grid.par.map(_.map(iterate_mdp(_, c => exp(c), 500)))
+  createImage(imageArray, 500, "exp_mandelpinski1")
 
 
 

@@ -36,3 +36,7 @@ The "center"  x=[-0.01,0] y=[-0.01,0.01]
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/mandelpinski4.png" width="50%" height="50%"> 
 
 ---
+
+The Mandelpinski version of the exponential function exp(z) for x=[-5,-5] y=[-10,-10]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exp_mandelpinski1.png" width="50%" height="50%"> 
