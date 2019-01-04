@@ -190,10 +190,17 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => c*c, 1000)))
 //  createImage(imageArray, 1000, "mandelpinski4")
 
-  grid = getGrid(3000, -5,5,-10,10)
-  imageArray = grid.par.map(_.map(iterate_mdp(_, c => exp(c), 500)))
-  createImage(imageArray, 500, "exp_mandelpinski1")
+//  grid = getGrid(3000, -5,5,-10,10)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, c => exp(c), 500)))
+//  createImage(imageArray, 500, "exp_mandelpinski1")
 
+//  grid = getGrid(3000, -1.9,-1,5,6)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, c => exp(c), 500)))
+//  createImage(imageArray, 500, "exp_mandelpinski2")
+
+  grid = getGrid(1000, -5,5,-10,10)
+  imageArray = grid.par.map(_.map(iterate_mdp(_, c => c.pow(log(c)), 500)))
+  createImage(imageArray, 500, "log_mandelpinski1")
 
 
 

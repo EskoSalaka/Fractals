@@ -40,3 +40,7 @@ The "center"  x=[-0.01,0] y=[-0.01,0.01]
 The Mandelpinski version of the exponential function exp(z) for x=[-5,-5] y=[-10,-10]
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exp_mandelpinski1.png" width="50%" height="50%"> 
+
+Zooing in at the spiral x=[-1.9,-1] y=[5,6]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exp_mandelpinski2.png" width="50%" height="50%"> 
