@@ -42,7 +42,7 @@ not seem to converge anywhere.
 
 ---
 
-Mandelbrot iteration of the exponential function exp(Z) for x=[-0.1,0.1] y=[0.2,0.3]. Keping in mind the properties of 
+Mandelbrot iteration of the exponential function exp(Z) for x=[-1,3] y=[0.2,-11,11]. Keping in mind the properties of 
 the complex exp(Z), its not suprising to see a repeating pattern at intervals of Pi.
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential_m3.png" width="50%" height="50%"> 
@@ -53,10 +53,20 @@ Lets take a closer look at x=[-0.1,0.1] y=[0.2,0.3]
 
 ---
 
-Simple and mandelbrot iteration of the inverse exponential function exp(-Z) for x=[-1,6] y=[-2,2]. 
+Simple and mandelbrot iteration of the inverse exponential function exp(-Z) for x=[-10,10] y=[-10,10]. 
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential2.png" width="50%" height="50%"> 
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential3.png" width="50%" height="50%"> 
 
 ---
+
+A bit more complex simple iteration of Z^2*exp(2*Pi*i*Z) for x=[-5,5] y=[-1,1]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential6.png" width="50%" height="50%"> 
+
+---
+
+Simple iteration of exp(2*Pi*i*Z^2)/(1-Z^2) for x=[-3,3] y=[-1,1]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential11.png" width="50%" height="50%"> 
