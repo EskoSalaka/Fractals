@@ -60,3 +60,13 @@ the exponential functions. Lets zoom in on one of those around x=[0,0.8] y=[2.8,
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential_feedback_m2.png" width="50%" height="50%"> 
 
+---
+
+Hyperbolic sine exp(Z) - exp(-Z) with feedback for x=[-5,5] y=[-5,5] and x=[-1,2] y=[-2,2]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin_feedback1.png" width="50%" height="50%"> 
+
+Again we see some hidden mandelbrots. Lets zoom in the middle to x=[-1,2] y=[-1,1]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin_feedback2.png.png" width="50%" height="50%"> 
+

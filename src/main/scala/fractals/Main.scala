@@ -113,10 +113,9 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c)-exp(-c), 500)))
 //  createImage(imageArray, 500, "hyp_sin1")
 
-  grid = getGrid(1000, -5,5,-5,5)
-  imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => exp(c)-exp(-c), 500)))
-  createImage(imageArray, 500, "hyp_sin2")
-
+//  grid = getGrid(1000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => exp(c)-exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_sin2")
 
 
 
@@ -137,6 +136,14 @@ object Main extends App {
 //  grid = getGrid(2000, 0,0.8,2.8,3.5)
 //  imageArray = grid.par.map(_.map(iterate_feedback_m(_, (c: Complex) => exp(c), 1000)))
 //  createImage(imageArray, 1000, "exponential_feedback_m2")
+
+//  grid = getGrid(1000, -5,5,-7,7)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => exp(c)-exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_sin_feedback1")
+
+//  grid = getGrid(5000, -2,1,-1,1)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, (c: Complex) => exp(c)-exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_sin_feedback2")
 
   /////////////////////////////////////// With Alternating functions ///////////////////////////////////////////////////
 
@@ -179,6 +186,14 @@ object Main extends App {
 //  grid = getGrid(2500, -2,1,-1,1)
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => c*c, (c: Complex) => c*c*c, 500)))
 //  createImage(imageArray, 500, "rational_alt_m4")
+
+//  grid = getGrid(1000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => exp(c)-exp(-c), (c: Complex) => exp(c)+exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_sin_alt1")
+
+//  grid = getGrid(2000, -0.012,0.014,1.565,1.58)
+//  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => exp(c)-exp(-c), (c: Complex) => exp(c)+exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_sin_alt2")
 
   /////////////////////////////////////// The other stuff //////////////////////////////////////////////////////////////
 
