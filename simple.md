@@ -85,3 +85,14 @@ patterns that emerge
 And a closer look at a spiral x=[0.774,0.78] y=[-0.275,-0.265]
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_m7.png" width="50%" height="50%"> 
+
+---
+
+Simple and mandelbrot iteration of hyperbolic sine exp(Z) - exp(-Z) for x=[-5,5] y=[-5,5] and x=[-1,2] y=[-2,2]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin2.png" width="50%" height="50%"> 
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin1.png" width="50%" height="50%"> 
+
+
+---
