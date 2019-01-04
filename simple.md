@@ -70,3 +70,18 @@ A bit more complex simple iteration of Z^2*exp(2*Pi*i*Z) for x=[-5,5] y=[-1,1]
 Simple iteration of exp(2*Pi*i*Z^2)/(1-Z^2) for x=[-3,3] y=[-1,1]
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential11.png" width="50%" height="50%"> 
+
+---
+
+Mandelbrot iteration of Z^3-Z-1 for x=[-0.1,1.4] y=[-0.5,0.5]. We get some interesting tendrils leading to the point 0.
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_m5.png" width="50%" height="50%"> 
+
+Lets take a closer look at the starting point of the tendril x=[0.7,0.8] y=[-0.31,-0.2]. There are some intricate
+patterns that emerge
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_m6.png" width="50%" height="50%"> 
+
+And a closer look at a spiral x=[0.774,0.78] y=[-0.275,-0.265]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rational_m7.png" width="50%" height="50%"> 

@@ -105,6 +105,10 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => c*c*c - c - 1, 500)))
 //  createImage(imageArray, 500, "rational_m7")
 
+  grid = getGrid(2000, -1,1,-1,1)
+  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => (5*c.pow(3) - 3*c)/2.0, 500)))
+  createImage(imageArray, 500, "legendre_m4")
+
   //////////////////////////////////////////// With Feedback ///////////////////////////////////////////////////////////
 
 //  grid = getGrid(3000, -2,1,-1,1)
