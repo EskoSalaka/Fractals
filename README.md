@@ -34,6 +34,8 @@ I have time and interest
 
 3. [Alternating functions](alternating.md)
 
+4. [Other methods](other.md)
+
 ### Short look into the code
 
 The iteration methods and everything else related to creating the images are in the Util object. The basic
