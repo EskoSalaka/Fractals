@@ -124,4 +124,8 @@ for both the sine and cosine with simple and mandelbrot-style iterations
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/cosh_m_scaling.gif" width="50%" height="50%"> 
 
-We can see that there seems to be some special limit which makes the converging areas connected. After this limit, 
+We can see that there seems to be some special limit which makes the converging areas clearly disappeare. We can also 
+see them pop out at certain times. Its  hard to 
+see if the areas completely disappear or if they just get smaller with thin filaments connecting them. These limits
+could be something related to the Feigenbaum constants.
+ 
