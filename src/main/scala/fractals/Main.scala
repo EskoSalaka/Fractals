@@ -109,13 +109,21 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c.re.abs + i*c.im.abs))))
 //  createImage(imageArray, 1000, "exp_ship_m1")
 
-//  grid = getGrid(3000, -1,1,-2,2)
-//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c)-exp(-c), 500)))
+//  grid = getGrid(3000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c)/2-exp(-c)/2, 500)))
 //  createImage(imageArray, 500, "hyp_sin1")
-
+//
 //  grid = getGrid(1000, -5,5,-5,5)
-//  imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => exp(c)-exp(-c), 500)))
+//  imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => exp(c)/2-exp(-c)/2, 500)))
 //  createImage(imageArray, 500, "hyp_sin2")
+
+//  grid = getGrid(3000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => exp(c)/2+exp(-c)/2, 500)))
+//  createImage(imageArray, 500, "hyp_cos1")
+//
+//  grid = getGrid(1000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c)/2+exp(-c)/2, 500)))
+//  createImage(imageArray, 500, "hyp_cos2")
 
 
 
@@ -194,6 +202,10 @@ object Main extends App {
 //  grid = getGrid(2000, -0.012,0.014,1.565,1.58)
 //  imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => exp(c)-exp(-c), (c: Complex) => exp(c)+exp(-c), 500)))
 //  createImage(imageArray, 500, "hyp_sin_alt2")
+
+//  grid = getGrid(1000, -3,2,-10,10)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => (exp(math.Pi*c)-exp(-math.Pi*c))/(2*math.Pi*c),500)))
+//  createImage(imageArray, 500, "sss")
 
   /////////////////////////////////////// The other stuff //////////////////////////////////////////////////////////////
 
