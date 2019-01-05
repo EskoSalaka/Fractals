@@ -125,6 +125,58 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c)/2+exp(-c)/2, 500)))
 //  createImage(imageArray, 500, "hyp_cos2")
 
+//  grid = getGrid(1000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => exp(c)-exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_sin3")
+
+//  grid = getGrid(1000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => exp(c)+exp(-c), 500)))
+//  createImage(imageArray, 500, "hyp_cos3")
+
+//  grid = getGrid(300, -5,5,-5,5)
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => sinh(c)/(10-0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + x.toString)
+//  }
+//
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => sinh(c)*(1+0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + (90+x).toString)
+//  }
+
+//  grid = getGrid(300, -5,5,-5,5)
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => cosh(c)/(10-0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + x.toString)
+//  }
+//
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate_m(_, (c: Complex) => cosh(c)*(1+0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + (90+x).toString)
+//  }
+
+//  grid = getGrid(300, -5,5,-5,5)
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => cosh(c)/(10-0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + x.toString)
+//  }
+//
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => cosh(c)*(1+0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + (90+x).toString)
+//  }
+
+//  grid = getGrid(300, -5,5,-5,5)
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => sinh(c)/(10-0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + x.toString)
+//  }
+//
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate(_, (c: Complex) => sinh(c)*(1+0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz_s" + (90+x).toString)
+//  }
+
 
 
   //////////////////////////////////////////// With Feedback ///////////////////////////////////////////////////////////
@@ -236,6 +288,14 @@ object Main extends App {
 //  grid = getGrid(1000, -5,5,-10,10)
 //  imageArray = grid.par.map(_.map(iterate_mdp(_, c => c.pow(log(c)), 500)))
 //  createImage(imageArray, 500, "log_mandelpinski1")
+
+//  grid = getGrid(1000, -5,5,-10,10)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, c => sinh(c), 500)))
+//  createImage(imageArray, 500, "sinh_mandelpinski1")
+//
+//  grid = getGrid(1000, -5,5,-10,10)
+//  imageArray = grid.par.map(_.map(iterate_mdp(_, c => cosh(c), 500)))
+//  createImage(imageArray, 500, "cosh_mandelpinski1")
 
 
 

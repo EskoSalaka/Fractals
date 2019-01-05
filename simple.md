@@ -103,5 +103,25 @@ Simple and mandelbrot iteration of hyperbolic cosine `(exp(Z) +exp(-Z))/2` for x
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_cos2.png" width="50%" height="50%"> 
 
-
 ---
+
+The hyperbolic sine and cosine both seem to have quite interesting behaviour when scaled by some constant. For example
+the following images are mandelbrot iteration of hyperbolic sine and cosine multiplied by 2
+
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin3.png" width="50%" height="50%"> 
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_cos3.png" width="50%" height="50%"> 
+
+Lets take a look at an animation that shows the scaling behavior when first scaled by a constant from 10->1 and 1->1/10
+for both the sine and cosine with simple and mandelbrot-style iterations
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/sinh_scaling.gif" width="50%" height="50%"> 
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/cosh_scaling.gif" width="50%" height="50%"> 
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/sinh_m_scaling.gif" width="50%" height="50%"> 
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/cosh_m_scaling.gif" width="50%" height="50%"> 
+
+We can see that there seems to be some special limit which makes the converging areas connected. After this limit, 

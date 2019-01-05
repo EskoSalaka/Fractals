@@ -3,11 +3,11 @@ package fractals
 import java.awt.Color
 import java.awt.image.BufferedImage
 import java.io.File
-import breeze.math._
 
+import breeze.math._
 import breeze.linalg.{DenseVector, linspace}
 import breeze.math.Complex
-import breeze.numerics.log
+import breeze.numerics.{exp, log}
 import javax.imageio.ImageIO
 
 import scala.collection.parallel.mutable.ParArray
@@ -64,6 +64,14 @@ object Util {
     }
 
     grid
+  }
+
+  def sinh(c: Complex): Complex = {
+    (exp(c) - exp(-c))/2
+  }
+
+  def cosh(c: Complex): Complex = {
+    (exp(c) + exp(-c))/2
   }
 
   def iterate(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
