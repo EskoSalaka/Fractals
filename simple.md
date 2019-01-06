@@ -35,8 +35,7 @@ not a great method for it.
 
 ---
 
-Simple iteration of the exponential function `exp(Z) - 1` for x=[-1,6] y=[-2,2]. The simpler function `exp(Z)` does
-not seem to converge anywhere.
+Simple iteration of the exponential function `exp(Z) - 1` for x=[-1,6] y=[-2,2].
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exponential1.png" width="50%" height="50%"> 
 
@@ -105,16 +104,18 @@ Simple and mandelbrot iteration of hyperbolic cosine `(exp(Z) +exp(-Z))/2` for x
 
 ---
 
-The hyperbolic sine and cosine both seem to have quite interesting behaviour when scaled by some constant. For example
-the following images are mandelbrot iteration of hyperbolic sine and cosine multiplied by 2
+The exponential function exp(Z) seems to have interesting behaviour when scaled by some constant a*exp(Z). It seems like
+there is an interesting chaotic limit a=1/e. Before this limit the simple iteration of the exp(Z) is mostly convergent
+and after this limit not convergent at all. There is a lot of chaotic stuff going on near this limit. There are also 
+other special limits where the behaviour changes slightly.
 
+Lets take a look at an animation that shows this scaling behavior by a constant from 10->1 and 1->1/10 with simple 
+iteration.
 
-<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin3.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exp_scaling.gif" width="50%" height="50%"> 
 
-<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_cos3.png" width="50%" height="50%"> 
-
-Lets take a look at an animation that shows the scaling behavior when first scaled by a constant from 10->1 and 1->1/10
-for both the sine and cosine with simple and mandelbrot-style iterations
+Lets take a look at an animation that shows the scaling behavior of the hyperbolic sine and cosine when first scaled by 
+a constant from 10->1 and 1->1/10 with simple and mandelbrot-style iterations
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/sinh_scaling.gif" width="50%" height="50%"> 
 
@@ -124,7 +125,7 @@ for both the sine and cosine with simple and mandelbrot-style iterations
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/cosh_m_scaling.gif" width="50%" height="50%"> 
 
-We can see that there seems to be some special limit which makes the converging areas clearly disappeare. We can also 
+We can see that there seems to be some special limit which makes the converging areas clearly disappear. We can also 
 see them pop out at certain times. Its  hard to see if the areas completely disappear or if they just get smaller with 
-thin filaments connecting them.  This constant is somewhere around 2/3, im not sure if it is exactly 2/3.
+thin filaments connecting them.  This constant is somewhere around 2/3, it could be 1-1/e
  
