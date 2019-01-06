@@ -99,4 +99,10 @@ There are some this areas of convergence including a copy of a mandelbrot set at
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/hyp_sin_alt2.png" width="50%" height="50%"> 
 
+The following gifs demonstrate the behaviour of sinh and cosh by a constant from 10->1 and 1->1/10 with simple 
+and mandelbrot iterations.
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/sinh_cosh_alt_scaling.gif"> 
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/sinh_cosh_alt_m_scaling.gif"> 
 
