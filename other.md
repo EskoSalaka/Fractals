@@ -72,7 +72,7 @@ Zooming into x=[-0.8,-0.3] y=[-0.3,-0.3]
 Rising power iteration `Zn+1 -> C*(1+1/Z)^n` for x=[-5,-5] y=[-5,-5] gives us quite a weird one, looks almost 
 like a painting.
 
-<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rising_power5.png" width="50%" height="50%"> 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rising power5.png" width="50%" height="50%"> 
 
 Heres the same for `Zn+1 -> C*(1+1/Z^2)^n`
 
