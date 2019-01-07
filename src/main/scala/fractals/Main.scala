@@ -192,16 +192,16 @@ object Main extends App {
 //    createImage(imageArray, 200, "zz4_s" + (90+x).toString)
 //  }
 
-  grid = getGrid(300, -5,5,-5,5)
-    for (x <- 0 until 90){
-      imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => sinh(c)/(10-0.1 * x), (c: Complex) => cosh(c)/(10-0.1 * x), 200)))
-      createImage(imageArray, 200, "zz4_s" + x.toString)
-    }
-
-    for (x <- 0 until 90){
-      imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => sinh(c)*(1+0.1 * x), (c: Complex) => cosh(c)*(1+0.1 * x), 200)))
-      createImage(imageArray, 200, "zz4_s" + (90+x).toString)
-    }
+//  grid = getGrid(300, -5,5,-5,5)
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => sinh(c)/(10-0.1 * x), (c: Complex) => cosh(c)/(10-0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz4_s" + x.toString)
+//  }
+//
+//  for (x <- 0 until 90){
+//    imageArray = grid.par.map(_.map(iterate_alt_m(_, (c: Complex) => sinh(c)*(1+0.1 * x), (c: Complex) => cosh(c)*(1+0.1 * x), 200)))
+//    createImage(imageArray, 200, "zz4_s" + (90+x).toString)
+//  }
 
 
 
@@ -322,6 +322,10 @@ object Main extends App {
 //  grid = getGrid(1000, -5,5,-10,10)
 //  imageArray = grid.par.map(_.map(iterate_mdp(_, c => cosh(c), 500)))
 //  createImage(imageArray, 500, "cosh_mandelpinski1")
+
+  grid = getGrid(5000, -2,2,-2,2)
+  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => c+1/c, 500)))
+  createImage(imageArray, 500, "sss")
 
 
 

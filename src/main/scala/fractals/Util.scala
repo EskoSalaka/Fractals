@@ -188,4 +188,28 @@ object Util {
 
     0
   }
+
+  def iterate_rising_pow1(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
+    var s: Complex = c
+
+    for (n <- 0 until maxIter){
+      s = c*f(s).pow(n)
+
+      if (s.re.isInfinity || s.imag.isInfinity) return n
+    }
+
+    0
+  }
+
+  def iterate_rising_pow2(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
+    var s: Complex = c
+
+    for (n <- 0 until maxIter){
+      s = f(s).pow(n) + c
+
+      if (s.re.isInfinity || s.imag.isInfinity) return n
+    }
+
+    0
+  }
 }

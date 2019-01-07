@@ -1,7 +1,7 @@
 # The fractals with other types of iteration iteration
 
 These images are results of various other types of iteration processes. The one I currently have here is the 
-"mandelpinski" type of iteration `Z -> f(Z)+C/f(Z)`
+"mandelpinski" type of iterations `Z -> f(Z)+C/Z^k`
 
 ```scala 
 def iterate_mdp(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
@@ -15,6 +15,8 @@ def iterate_mdp(c: Complex, f: Complex => Complex, maxIter: Int = 1000): Int = {
     0
   }
 ```
+
+and iterations with a rising power such as `Zn+1 -> C*f(Zn)^n`
 
 # The images
 
@@ -44,3 +46,9 @@ The Mandelpinski version of the exponential function exp(z) for x=[-5,-5] y=[-10
 Zooming in at the spiral x=[-1.9,-1] y=[5,6]
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/exp_mandelpinski2.png" width="50%" height="50%"> 
+
+---
+
+Rising power iteration `Zn+1 -> C*f(Zn)^n` of f(Z)=Z+1/Z for x=[-2,-2] y=[-2,-2]
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rising_pow1.png" width="50%" height="50%"> 
