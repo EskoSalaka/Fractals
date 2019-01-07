@@ -348,12 +348,9 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => 1+1/exp(c), 1000)))
 //  createImage(imageArray, 1000, "rising_power6")
 
-  grid = getGrid(4000, -1,1,-1,1)
-  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => 1+1/exp(c), 500)))
-  createImage(imageArray, 500, "rising_power7")
-
-
-
+  grid = getGrid(1000, -5,5,-5,5)
+  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => 1+1/c.pow(2), 500)))
+  createImage(imageArray, 500, "rising_power8")
 
 
 

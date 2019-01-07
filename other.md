@@ -74,6 +74,8 @@ like a painting.
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rising_power5.png" width="50%" height="50%"> 
 
+Heres the same for `Zn+1 -> C*(1+1/Z^2)^n`
+
 ---
 
 Rising power iteration `Zn+1 -> C*(1+1/exp(Z))^n` for x=[-5,-5] y=[-5,-5] 
