@@ -76,6 +76,8 @@ like a painting.
 
 Heres the same for `Zn+1 -> C*(1+1/Z^2)^n`
 
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rising_power8.png" width="50%" height="50%"> 
+
 ---
 
 Rising power iteration `Zn+1 -> C*(1+1/exp(Z))^n` for x=[-5,-5] y=[-5,-5] 
