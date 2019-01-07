@@ -323,9 +323,34 @@ object Main extends App {
 //  imageArray = grid.par.map(_.map(iterate_mdp(_, c => cosh(c), 500)))
 //  createImage(imageArray, 500, "cosh_mandelpinski1")
 
-  grid = getGrid(5000, -2,2,-2,2)
-  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => c+1/c, 500)))
-  createImage(imageArray, 500, "sss")
+//  grid = getGrid(5000, -2,2,-2,2)
+//  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => c+1/c, 500)))
+//  createImage(imageArray, 500, "rising_pow1")
+
+//  grid = getGrid(3000, -0.5,0.5,-0.5,0.5)
+//  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => c+1/c, 500)))
+//  createImage(imageArray, 500, "rising_pow2")
+
+//  grid = getGrid(1000, -4,1,-2,2)
+//  imageArray = grid.par.map(_.map(iterate_rising_pow2(_, c => c*c, 500)))
+//  createImage(imageArray, 500, "rising_pow3")
+
+//  grid = getGrid(4000, -1.2,-0.8,-0.3,0.3)
+//  imageArray = grid.par.map(_.map(iterate_rising_pow2(_, c => c*c, 500)))
+//  createImage(imageArray, 500, "rising_pow4")
+//
+
+//  grid = getGrid(3000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => 1+1/c, 500)))
+//  createImage(imageArray, 500, "rising_power5")
+
+//  grid = getGrid(4000, -5,5,-5,5)
+//  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => 1+1/exp(c), 1000)))
+//  createImage(imageArray, 1000, "rising_power6")
+
+  grid = getGrid(4000, -1,1,-1,1)
+  imageArray = grid.par.map(_.map(iterate_rising_pow1(_, c => 1+1/exp(c), 500)))
+  createImage(imageArray, 500, "rising_power7")
 
 
 
