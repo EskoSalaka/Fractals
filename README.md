@@ -4,7 +4,9 @@
 
 Fractals is a simple small project just to explore some interesting fractal maps and iterations methods
 not commonly seen around the internet. The code itself is not very well optimized and the colour mappings
-are not terribly pretty but it's good enough for an on-the-surface look into some interesting stuff.
+are not terribly pretty but it's good enough for an on-the-surface look into some interesting stuff. If you are
+interested in a bit better and faster methods for exploring fractals with Python, then take a look at 
+https://github.com/EskoSalaka/Fractals-py-cuda
 
 The complex-valued functions explored are typically something related to the exponential function e^z or 
 certain interesting rational functions like z^2*(1-z)/(1-z^2). Aside from the normal simple iteration
