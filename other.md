@@ -87,3 +87,11 @@ Rising power iteration `Zn+1 -> C*(1+1/exp(Z))^n` for x=[-5,-5] y=[-5,-5]
 Zoomed into  x=[-1,-1] y=[-1,-1] 
 
 <img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/rising_power7.png" width="50%" height="50%">
+
+---
+
+The fractal related to the Lambert W function described in http://www.apmaths.uwo.ca/~rcorless/frames/PAPERS/LambertW/ 
+for x=[-5,2] y=[-2,-2]. It's basically the power-tower with iteration starting at `C = exp(C * exp(-C))`. The interior
+for cycles up to 3 is coloured with blue.
+
+<img src="https://raw.githubusercontent.com/EskoSalaka/Fractals/master/Images/lambert.png" width="50%" height="50%"> 
